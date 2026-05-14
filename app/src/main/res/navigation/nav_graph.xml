@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/profileFragment">
+
+    <fragment android:id="@+id/profileFragment"
+        android:name="com.pashuaahar.ui.profile.ProfileFragment"
+        android:label="Profile">
+        <action android:id="@+id/action_profile_to_recipe"
+            app:destination="@id/recipeFragment"/>
+    </fragment>
+
+    <fragment android:id="@+id/recipeFragment"
+        android:name="com.pashuaahar.ui.recipe.RecipeFragment"
+        android:label="Recipe"/>
+
+    <fragment android:id="@+id/breedsFragment"
+        android:name="com.pashuaahar.ui.breeds.BreedsFragment"
+        android:label="@string/tab_breeds">
+        <action android:id="@+id/action_breeds_to_details"
+            app:destination="@id/breedDetailFragment"/>
+    </fragment>
+
+    <fragment android:id="@+id/breedDetailFragment"
+        android:name="com.pashuaahar.ui.breeds.BreedDetailFragment"
+        android:label="Breed Details" />
+
+    <fragment android:id="@+id/costFragment"
+        android:name="com.pashuaahar.ui.cost.CostFragment"
+        android:label="Savings"/>
+
+    <fragment android:id="@+id/tipsFragment"
+        android:name="com.pashuaahar.ui.tips.TipsFragment"
+        android:label="Tips"/>
+
+    <fragment android:id="@+id/settingsFragment"
+        android:name="com.pashuaahar.ui.settings.SettingsFragment"
+        android:label="@string/settings"/>
+</navigation>

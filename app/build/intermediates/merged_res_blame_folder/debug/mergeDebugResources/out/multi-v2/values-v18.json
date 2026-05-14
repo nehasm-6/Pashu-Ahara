@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.pashuaahar.app-mergeDebugResources-2:/values-v18/values-v18.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Neha\\.gradle\\caches\\9.2.1\\transforms\\b3b5aa4f2105ba8fea88fbf078155375\\workspace\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        }
+    ]
+}

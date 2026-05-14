@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bg_green">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+
+        <!-- Header -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@drawable/gradient_green" android:padding="20dp"
+            android:orientation="vertical" android:layout_marginBottom="16dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/tv_recipe_title" android:text="🌾 Balanced Feed Recipe"
+                android:textColor="#FFFFFF" android:textSize="20sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/tv_recipe_subtitle"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="#CCFFFFFF" android:textSize="13sp" android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Stats Grid -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:weightSum="3" android:layout_marginBottom="16dp">
+            <androidx.cardview.widget.CardView android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:layout_marginEnd="6dp" app:cardCornerRadius="12dp" app:cardElevation="2dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:gravity="center" android:padding="14dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🥛" android:textSize="22sp"/>
+                    <TextView android:id="@+id/tv_stat_yield" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="—" android:textSize="18sp" android:textStyle="bold" android:textColor="@color/green_700"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Target" android:textSize="10sp" android:textColor="@color/text_muted"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:layout_marginStart="3dp" android:layout_marginEnd="3dp"
+                app:cardCornerRadius="12dp" app:cardElevation="2dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:gravity="center" android:padding="14dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="💰" android:textSize="22sp"/>
+                    <TextView android:id="@+id/tv_stat_cost" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="—" android:textSize="18sp" android:textStyle="bold" android:textColor="@color/green_700"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Daily Cost" android:textSize="10sp" android:textColor="@color/text_muted"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:layout_marginStart="6dp" app:cardCornerRadius="12dp" app:cardElevation="2dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:gravity="center" android:padding="14dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📉" android:textSize="22sp"/>
+                    <TextView android:id="@+id/tv_stat_savings" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="—" android:textSize="18sp" android:textStyle="bold" android:textColor="@color/green_700"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Savings" android:textSize="10sp" android:textColor="@color/text_muted"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Live Yield Adjuster -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp" app:cardElevation="4dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="18dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🎯 Adjust Target Yield" android:textStyle="bold" android:textSize="15sp"/>
+                <TextView android:id="@+id/tv_live_yield_val"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="10L / day" android:textSize="26sp" android:textStyle="bold"
+                    android:textColor="@color/green_700" android:gravity="center" android:paddingTop="8dp"/>
+                <SeekBar android:id="@+id/seek_live_yield"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:max="60" android:progress="20"
+                    android:progressTint="@color/green_500" android:thumbTint="@color/green_700"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Nutrition Bars -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp" app:cardElevation="4dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="📊 Nutrition Coverage" android:textStyle="bold" android:textSize="13sp"
+                    android:textAllCaps="true" android:letterSpacing="0.1" android:textColor="@color/text_muted"
+                    android:layout_marginBottom="12dp"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="4dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Crude Protein (CP)" android:textSize="12sp" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tv_cp_text" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="12sp" android:textColor="@color/text_muted"/>
+                </LinearLayout>
+                <ProgressBar android:id="@+id/progress_cp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent" android:layout_height="10dp"
+                    android:layout_marginBottom="12dp" android:max="100"
+                    android:progressTint="@color/green_500" android:progressBackgroundTint="@color/green_100"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="4dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Metabolisable Energy (ME)" android:textSize="12sp" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tv_me_text" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="12sp" android:textColor="@color/text_muted"/>
+                </LinearLayout>
+                <ProgressBar android:id="@+id/progress_me"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent" android:layout_height="10dp"
+                    android:max="100"
+                    android:progressTint="#F59E0B" android:progressBackgroundTint="@color/green_100"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Ingredient List -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="🧺 FEED INGREDIENTS" android:textSize="12sp" android:textStyle="bold"
+            android:textColor="@color/text_muted" android:letterSpacing="0.12"
+            android:layout_marginBottom="10dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_ingredients"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"/>
+
+        <!-- Empty state -->
+        <LinearLayout android:id="@+id/empty_state"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:gravity="center"
+            android:padding="48dp" android:visibility="gone">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="🌾" android:textSize="64sp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Complete your profile first" android:textSize="16sp"
+                android:textColor="@color/text_muted" android:layout_marginTop="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/content_group"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>

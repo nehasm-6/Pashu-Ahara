@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-mergeDebugResources-3:\\layout\\include_step_buttons.xml",
+        "source": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-main-6:\\layout\\include_step_buttons.xml"
+    },
+    {
+        "merged": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-mergeDebugResources-3:\\layout\\item_breed_selection.xml",
+        "source": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-main-6:\\layout\\item_breed_selection.xml"
+    },
+    {
+        "merged": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-mergeDebugResources-3:\\layout\\item_tip_card.xml",
+        "source": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-main-6:\\layout\\item_tip_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-mergeDebugResources-3:\\layout\\fragment_settings.xml",
+        "source": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-main-6:\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "com.pashuaahar.app-mergeDebugResources-3:/layout/fragment_profile.xml",
+        "source": "com.pashuaahar.app-main-6:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-mergeDebugResources-3:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-main-6:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-mergeDebugResources-3:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-main-6:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-mergeDebugResources-3:\\layout\\item_cow_breed.xml",
+        "source": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-main-6:\\layout\\item_cow_breed.xml"
+    },
+    {
+        "merged": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-mergeDebugResources-3:\\layout\\fragment_breeds.xml",
+        "source": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-main-6:\\layout\\fragment_breeds.xml"
+    },
+    {
+        "merged": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-mergeDebugResources-3:\\layout\\fragment_tips.xml",
+        "source": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-main-6:\\layout\\fragment_tips.xml"
+    },
+    {
+        "merged": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-mergeDebugResources-3:\\layout\\fragment_cost.xml",
+        "source": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-main-6:\\layout\\fragment_cost.xml"
+    },
+    {
+        "merged": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-mergeDebugResources-3:\\layout\\fragment_recipe.xml",
+        "source": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-main-6:\\layout\\fragment_recipe.xml"
+    },
+    {
+        "merged": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-mergeDebugResources-3:\\layout\\fragment_breed_detail.xml",
+        "source": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-main-6:\\layout\\fragment_breed_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-mergeDebugResources-3:\\layout\\item_recipe_ingredient.xml",
+        "source": "C:\\Users\\Neha\\.gradle\\daemon\\9.2.1\\com.pashuaahar.app-main-6:\\layout\\item_recipe_ingredient.xml"
+    }
+]

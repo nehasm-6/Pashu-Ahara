@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_margin="6dp" app:cardCornerRadius="14dp" app:cardElevation="3dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- Thumbnail -->
+        <FrameLayout android:id="@+id/thumb_background"
+            android:layout_width="match_parent" android:layout_height="90dp"
+            android:gravity="center">
+            <TextView android:id="@+id/tv_tip_emoji"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="center" android:textSize="40sp"/>
+
+        </FrameLayout>
+        <!-- Body -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="10dp">
+            <TextView android:id="@+id/tv_tip_category"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="9sp" android:textStyle="bold"
+                android:layout_marginBottom="5dp"/>
+            <TextView android:id="@+id/tv_tip_title"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="12sp" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+            <TextView android:id="@+id/tv_tip_desc"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="10sp" android:textColor="@color/text_muted"
+                android:maxLines="2" android:ellipsize="end"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

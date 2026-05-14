@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_cow"
+        android:title="@string/tab_profile"/>
+    <item android:id="@+id/recipeFragment"
+        android:icon="@drawable/ic_recipe"
+        android:title="@string/tab_recipe"/>
+    <item android:id="@+id/breedsFragment"
+        android:icon="@drawable/ic_breeds"
+        android:title="@string/tab_breeds"/>
+    <item android:id="@+id/costFragment"
+        android:icon="@drawable/ic_cost"
+        android:title="@string/tab_savings"/>
+    <item android:id="@+id/tipsFragment"
+        android:icon="@drawable/ic_tips"
+        android:title="@string/tab_tips"/>
+</menu>
